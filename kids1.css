@@ -47,6 +47,15 @@ html,body{
     border-radius: 50%;
    
 }
+.primary-stories-btn{
+    height: 2rem;
+    position: relative;
+    text-align: center;
+    width: 10rem;
+    color: #FFFFFF;
+    border-radius: 16px;
+    background-color: #5D58EF;
+}
 /* navbar style */
     
 
@@ -190,7 +199,104 @@ i{
     box-shadow: 5px 5px 5px -5px gray, -3px 3px rgb(239, 236, 236);
 }
 
+/* stories style */
+.stroies-section{
+    height: 55rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("images/bg.png");
+}
+.stories-photo-container{
+    height: 39rem;
+    width: 88rem;
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    
+}
+.big-box{
+    height: 39rem;
+    width: 47%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    gap: 10px;
+    box-shadow:5px 5px 5px -5px gray, -3px 3px rgb(239, 236, 236);
+}
+.images4-container{
+    height: 39rem;
+    width: 44%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.big-img{
+    width: 100%;
+    height: 61%;
+    border-radius: 16px;
+    
+}
+.stories-btn{
+    margin-top: -120px;
+}
+.kids-img-container{
+    height: 19rem;
+    width: 19rem;
+    border-radius: 1rem;
+    background-color: #FFFFFF;
+    box-shadow:5px 5px 5px -5px gray, -3px 3px rgb(239, 236, 236);
+}
+.description-container{
+    display: flex;
+    height: 39%;
+    width: 95%;
+    gap: 50px;
+    text-align: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.big-btn{
+  margin-top: 30px;
+}
+.big-description{
+    margin-top: 30px;
+}
+.mini-btn{
+    margin-top: -20px;
+}
+.mini-description{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 20px;
+}
+.mini-title{
+    margin-top: 30px;
+}
+.stories{
+    margin-bottom: 40px;
+}
+
 /* responsive */
+@media screen and (max-width: 1300px) {
+    .big-box{
+        display: none;
+    }
+    .stories-photo-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width:1200px ) {
     .box-container{
         display: grid;
