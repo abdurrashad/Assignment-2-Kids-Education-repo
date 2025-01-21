@@ -152,9 +152,27 @@ i{
         margin-top: 300px;
     }
     .banner-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto;
     }
+    .banner-title{
+        text-align: center;
+    }
+    .banner-description{
+        text-align: center;
+    }
+    
     .banner-img{
-        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 ;
+       
+    }
+    .banner-img img{
+        width: 90%;
     }
 }
