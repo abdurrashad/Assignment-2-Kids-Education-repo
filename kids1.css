@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* shared style */
+
+a, li{
+    text-decoration: none;
+    list-style-type: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.btn{
+    color: #FFFFFF;
+    /* font-size: 15px; */
+}
+
+/* navbar style */
+    
+
+.nav-container{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 60px;
+    margin-top: 20px;
+}
+.img-school{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.option-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.option{
+    font-weight: bold;
+    font-size: 22px;
+}
+.option1{
+    color: orange;
+}
+.option2{
+    color: skyblue;
+}
+.option3{
+    color: #05D4DF;
+}
+.option4{
+    color: #5D58EF;
+}
+.menu-icon{
+    display: none;
+}
+i{
+    font-size:30px;
+}
+.nav-btn{
+    display: flex;
+    height: 40px;
+    width: 150px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+}
+
+/* banner style */
+
+.banner-section{
+    height: 575px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 56px;
+}
+.banner-description{
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+.banner-btn{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 15px;
+    background-color: black;
+    border-radius: 12px;
+    border: none;
+}
+.banner-container{
+    margin-left: 40px;
+}
+.empower{
+    color: orange;
+}
+.vision{
+    color: rgb(26, 125, 164);
+}
+.banner-img{
+    margin-right: 30px;
+}
+
+/* responsive */
+
+@media screen and (max-width:800px) {
+    nav ul{
+        position: absolute;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        top: 70px;
+        left: 0px;
+        overflow: hidden;
+        right: 0px;
+        gap: 0px;
+    }
+
+    nav ul li{
+        padding: 0px;
+    }
+    .nav-btn, .school{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        justify-content: end;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+    /* banner */
+    .banner-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 300px;
+    }
+    .banner-container{
+        margin: 0 auto;
+    }
+    .banner-img{
+        margin: 0 auto;
+    }
+}
