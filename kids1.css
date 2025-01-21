@@ -17,9 +17,36 @@ html,body{
 }
 .btn{
     color: #FFFFFF;
-    /* font-size: 15px; */
 }
-
+.primary-font{
+    font-weight: bold;
+    font-size: 46px;
+    color: #000000;
+}
+.primary-title{
+    font-weight: bold;
+    font-display: 24px;
+    color: #202020;
+}
+.primary-description{
+    font-weight: 600px;
+    font-size: 15px;
+    color: #808080;
+    margin: 10px;
+}
+.circle{
+    height: 60px;
+    width: 130px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.div{
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+    border-radius: 50%;
+   
+}
 /* navbar style */
     
 
@@ -30,6 +57,7 @@ html,body{
     align-items: center;
     position: relative;
     height: 60px;
+    margin: 0 130px;
     margin-top: 20px;
 }
 .img-school{
@@ -104,7 +132,7 @@ i{
     border: none;
 }
 .banner-container{
-    margin-left: 40px;
+    margin-left: 170px;
 }
 .empower{
     color: orange;
@@ -113,10 +141,73 @@ i{
     color: rgb(26, 125, 164);
 }
 .banner-img{
-    margin-right: 30px;
+    margin-right: 170px;
+}
+
+/* curriculum style */
+
+.curriculum-section{
+    height: 880px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    background-image: url("images/bg.png");
+    align-items: center;
+    justify-content: center;
+}
+.box-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 440px;
+    width: 95%;
+
+}
+.box{
+    height: 28rem;
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border-radius: 18px;
+
+    
+}
+.box1{
+    background: linear-gradient(#DEF5FF,#FFFFFF);
+    box-shadow: 5px 5px 5px -5px gray, -3px 3px rgb(239, 236, 236);
+}
+.box2{
+    background: linear-gradient(#FFF4DC, #FFFFFF);
+    box-shadow: 5px 5px 5px -5px gray, -3px 3px rgb(239, 236, 236);
+}
+.box3{
+    background: linear-gradient(#F2E8FF,#FFFFFF);
+    box-shadow: 5px 5px 5px -5px gray, -3px 3px rgb(239, 236, 236);
 }
 
 /* responsive */
+@media screen and (max-width:1200px ) {
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+    .curriculum-section{
+        margin-top: 200px;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
 
 @media screen and (max-width:800px) {
     nav ul{
@@ -129,6 +220,9 @@ i{
         overflow: hidden;
         right: 0px;
         gap: 0px;
+    }
+    .nav-container{
+        margin: 0 auto;
     }
 
     nav ul li{
@@ -149,9 +243,11 @@ i{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-        margin-top: 300px;
+        margin-top: 250px;
     }
-    .banner-container{
+    .banner-container,
+    .box-container
+    {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -174,5 +270,19 @@ i{
     }
     .banner-img img{
         width: 90%;
+    }
+    .curriculum-section{
+        margin-top: 400px;
+        text-align: center;
+    }
+    .circle{
+        display: none;
+    }
+    .box-container{
+        margin-top: 20px;
+       
+    }
+    .box{
+        margin-top: 30px;
     }
 }
