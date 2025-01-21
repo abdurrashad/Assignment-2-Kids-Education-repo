@@ -234,7 +234,7 @@ i{
     height: 39rem;
     width: 44%;
     display: grid;
-    gap: 20px;
+    gap: 25px;
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
     align-items: center;
@@ -285,7 +285,55 @@ i{
 .stories{
     margin-bottom: 40px;
 }
+/* footer style */
 
+.footer-section{
+    height: 33rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01ACFD;
+}
+.footer-div{
+    height: 20rem;
+    width: 80rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-box{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+   
+}
+.kids-img{
+    display: flex;
+    gap: 20px;
+    color: #FFFFFF;
+    margin-top: -30px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#footer-logo{
+    margin-bottom: 90px;
+}
+.logo{
+    margin-top: 30px;
+}
+#midile-box{
+    margin-left: 60px;
+}
+#icon{
+    height: 81px;
+    width: 82px;
+}
 /* responsive */
 @media screen and (max-width: 1300px) {
     .big-box{
